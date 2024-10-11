@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/signupbg"
+    >
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Emergency Timer"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/sora_medium"
+        />
+
+    <EditText
+        android:id="@+id/hoursInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Hours"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/minutesInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Minutes"
+        android:inputType="number"
+        android:layout_below="@id/hoursInput"
+        android:layout_centerHorizontal="true"
+       />
+
+    <EditText
+        android:id="@+id/secondsInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Seconds"
+        android:inputType="number"
+        android:layout_marginTop="60dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@id/minutesInput"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Timer"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@id/secondsInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="Stop Timer"
+        android:layout_below="@id/startButton"
+        android:layout_centerHorizontal="true"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="102dp"
+        android:text="Note: A SOS will be triggered if the timer expires."
+        android:textColor="#400202"
+        android:textSize="20sp" />
+</RelativeLayout>

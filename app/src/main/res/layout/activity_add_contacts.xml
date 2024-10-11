@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/signupbg"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Contacts"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sora_extrabold"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        />
+
+    <Button
+        android:id="@+id/sendSosButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="153dp"
+        android:textSize="14sp"
+        android:text="Send SOS" />
+
+    <EditText
+        android:id="@+id/contactNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Name"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/contactNumberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        android:textColor="@color/white"
+        android:layout_below="@id/contactNameInput"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/addContactButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Contact"
+        android:textColor="@color/white"
+        android:layout_below="@id/contactNumberInput"
+        android:layout_marginTop="20dp" />
+
+    <ListView
+        android:id="@+id/contactListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addContactButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="13dp"
+        android:textColor="@color/white" />
+</RelativeLayout>
